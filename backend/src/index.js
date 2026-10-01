@@ -7,7 +7,7 @@ const authRoutes = require('./routes/auth');
 const jobRoutes = require('./routes/jobs');
 const applicationRoutes = require('./routes/applications');
 const employerRoutes = require('./routes/employer');
-
+console.log("Deploy test " + new Date().toISOString());
 const app = express();
 
 app.use(cors({ origin: process.env.CLIENT_URL || '*' }));
